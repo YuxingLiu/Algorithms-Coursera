@@ -6,7 +6,7 @@ Greedy algorithms, Prim's MST algorithm
 In this programming problem and the next you'll code up the greedy algorithms from lecture for minimizing the weighted sum of 
 completion times.
 
-[jobs.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week1/blob/master/jobs.txt) describes a set of jobs with positive and 
+[jobs.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week1/jobs.txt) describes a set of jobs with positive and 
 integral weights and lengths. It has the format
 
 [number_of_jobs]
@@ -39,7 +39,7 @@ In this algorithm, it does not matter how you break ties.
 
 In this programming problem you'll code up Prim's minimum spanning tree algorithm.
 
-[edges.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week1/blob/master/edges.txt) describes an undirected 
+[edges.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week1/edges.txt) describes an undirected 
 graph with integer edge costs. It has the format
 
 [number_of_nodes] [number_of_edges]
