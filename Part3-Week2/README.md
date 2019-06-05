@@ -4,7 +4,7 @@
 
 In this programming problem and the next you'll code up the clustering algorithm from lecture for computing a max-spacing k-clustering.
 
-[clustering1.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week2/blob/master/clustering1.txt) describes a distance 
+[clustering1.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week2/clustering1.txt) describes a distance 
 function (equivalently, a complete graph with edge costs). It has the following format:
 
 [number_of_nodes]
@@ -30,7 +30,7 @@ is set to 4. What is the maximum spacing of a 4-clustering?
 In this question your task is again to run the clustering algorithm from lecture, but on a MUCH bigger graph. So big, in fact, that 
 the distances (i.e., edge costs) are only defined implicitly, rather than being provided as an explicit list.
 
-The data set is [clustering_big.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week2/blob/master/clustering_big.txt). The format 
+The data set is [clustering_big.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week2/clustering_big.txt). The format 
 is:
 
 [# of nodes] [# of bits for each node's label]
