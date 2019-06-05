@@ -35,7 +35,7 @@ Your task now is to run the greedy algorithm that schedules jobs (optimally) in 
 In this algorithm, it does not matter how you break ties.
 
 
-## Problem
+## Problem 3
 
 In this programming problem you'll code up Prim's minimum spanning tree algorithm.
 
