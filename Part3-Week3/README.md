@@ -4,7 +4,7 @@
 
 In this programming problem and the next you'll code up the greedy algorithm from the lectures on Huffman coding.
 
-[huffman.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week3/blob/master/huffman.txt) describes an instance of the problem. It has the following format:
+[huffman.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week3/huffman.txt) describes an instance of the problem. It has the following format:
 
 [number_of_symbols]
 
@@ -28,7 +28,7 @@ Continuing the previous problem, what is the minimum length of a codeword in you
 
 In this programming problem you'll code up the dynamic programming algorithm for computing a maximum-weight independent set of a path graph.
 
-[mwis.txt](https://github.com/YuxingLiu/Algorithm-Part3-Week3/blob/master/mwis.txt) describes the weights of the vertices in a path graph (with the weights listed in the order in which vertices appear in the path). It has the following format:
+[mwis.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week3/mwis.txt) describes the weights of the vertices in a path graph (with the weights listed in the order in which vertices appear in the path). It has the following format:
 
 [number_of_vertices]
 
