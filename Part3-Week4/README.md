@@ -4,7 +4,7 @@
 
 In this programming problem and the next you'll code up the knapsack algorithm from lecture.
 
-[knapsack1.txt](https://github.com/YuxingLiu/Algorithm-Part3-Wee4/blob/master/knapsack1.txt) describes a knapsack instance, and it has the following format:
+[knapsack1.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week4/knapsack1.txt) describes a knapsack instance, and it has the following format:
 
 [knapsack_size][number_of_items]
 
@@ -24,7 +24,7 @@ In the box below, type in the value of the optimal solution.
 
 This problem also asks you to solve a knapsack instance, but a much bigger one.
 
-[knapsack_big.txt](https://github.com/YuxingLiu/Algorithm-Part3-Wee4/blob/master/knapsack_big.txt) describes a knapsack instance, and it has the following format:
+[knapsack_big.txt](https://github.com/YuxingLiu/Algorithms-Coursera/blob/master/Part3-Week4/knapsack_big.txt) describes a knapsack instance, and it has the following format:
 
 [knapsack_size][number_of_items]
 
