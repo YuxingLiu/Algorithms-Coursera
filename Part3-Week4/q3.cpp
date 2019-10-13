@@ -57,6 +57,7 @@ public:
 int main()
 {
     double mydata[] = { 0.05, 0.4, 0.08, 0.04, 0.1, 0.1, 0.23 };
+    //	double mydata[] = { .2, .05, .17, .1, .2, .03, .25 };	// final exam
     vector<double> p(mydata, mydata + sizeof(mydata) / sizeof(double));
 
     OptimalBST optBST;
