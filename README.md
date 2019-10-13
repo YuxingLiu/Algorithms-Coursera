@@ -19,7 +19,7 @@
 ## Part 2: Graph Search, Shortest Paths, and Data Structures
 
 * Week 1
-  - Breadth-first and depth-first search search;
+  - Breadth-first and depth-first search;
   - Strongly connected components.
 * Week 2
   - Dijkstra's shortest-path algorithm.
