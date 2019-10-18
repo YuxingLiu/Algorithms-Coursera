@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <unordered_set>
+#include <algorithm>        // for sort()
 
 using namespace std;
 
@@ -33,12 +34,48 @@ public:
 
         return count;
     }
+
+    int twosumBS(vector<long long> X, vector<int> T){
+        if(X.empty() || T.empty())
+            return 0;
+
+        sort(X.begin(), X.end());   // sorted array with duplicates
+
+        int i=0;
+        int j=X.size()-1;
+        unordered_set<int> Sum;
+
+        while(i < j)                // iterate until i pass j
+        {
+            if(X[i] + X[j] < -10000)
+                i++;
+            else if(X[i] + X[j] > 10000)
+                j--;
+            else if(X[i] == X[j])
+                break;
+            else
+            {
+                int k=j;
+                long long sum = X[i] + X[k];
+                while(sum >= -10000 && sum <= 10000)
+                {
+                    Sum.insert(sum);
+                    k--;
+                    if(X[i] == X[k])
+                        break;
+                    sum = X[i] + X[k];
+                }
+                i++;
+            }
+        }
+
+        return Sum.size();
+    }
 };
 
 int main(){
 
-    //ifstream myfile("prob-2sum.txt");
-    ifstream myfile("input_random_68_640000.txt");
+    ifstream myfile("prob-2sum.txt");
     vector<long long> X;
     long long x;
 
@@ -51,7 +88,8 @@ int main(){
         T.push_back(i);
 
     TwoSum ts;
-    int c = ts.twosumHash(X, T);
+    //int c = ts.twosumHash(X, T);  // very slow
+    int c = ts.twosumBS(X, T);
 
     cout << c << endl;
 
