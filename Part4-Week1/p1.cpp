@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <bits/stdc++.h>    // for INT_MAX
 
 using namespace std;
 
@@ -9,7 +8,6 @@ class APSP{
 public:
     int FloydWarshall(int n, vector<int> E[], vector<int> F[]){
         // initialization
-        //vector<vector<vector <int>>> A(n+1, vector<vector <int>>(n+1, vector<int>(n+1, INT_MAX)));
         vector<vector<vector <int>>> A(n+1, vector<vector <int>>(n+1, vector<int>(n+1, 1000000)));
         for(int i=1; i<=n; ++i)
         {
@@ -38,8 +36,8 @@ public:
         {
             if(A[i][i][n] < 0)
             {
-                cout << "Negative cycle found" << endl;
-                return 0;
+                cout << "Negative cycle found." << endl;
+                throw "NULL";
             }
         }
 
@@ -68,10 +66,10 @@ public:
 
 int main()
 {
-    ifstream myfile("g3.txt");
+    ifstream myfile("g1.txt");
     if(!myfile.is_open())
     {
-        cout << "File failed to open" << endl;
+        cout << "File failed to open." << endl;
         return 0;
     }
 
@@ -92,11 +90,15 @@ int main()
     }
     myfile.close();
 
-    cout << "n = " << n << endl;
-
     APSP apsp;
-    int sp = apsp.FloydWarshall(n, E, F);
-    cout << "Shortest path = " << sp << endl;
+
+    try{
+        int sp = apsp.FloydWarshall(n, E, F);
+        cout << "Shortest path = " << sp << endl;
+    } catch (const char* msg) {
+        cerr << msg << endl;
+    }
+
 
     return 0;
 }
