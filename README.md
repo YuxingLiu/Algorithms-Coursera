@@ -55,7 +55,7 @@
 * Week 2
   - NP-complete problems and exact algorithms for them.
 * Week 3
-  - Approximation algorithms for NP_complete problems.
+  - Approximation algorithms for NP-complete problems.
 * Week 4
   - Local search algorithms for NP-complete problems;
   - The wider world of algorithms.
